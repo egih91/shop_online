@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block title %}Create{% endblock %}
+{% block body %}
+
+<div class=" container col-md-7 col-lg-8">
+<form method="post">
+<div class="row g-3">
+      <div class="col-sm-6">
+              <label for="firstName" class="form-label">Product name</label>
+              <input type="text" name="title" id="title" class=" container form-control" placeholder="Product name">
+              <div class="invalid-feedback">
+                Valid name is required.
+              </div>
+            </div>
+    <div class="col-sm-6">
+              <label for="lastName" class="form-label">Product price</label>
+                  <input type="number" name="price" id="price" class=" container form-control" placeholder="Product price">              <div class="invalid-feedback">
+                Valid price is required.
+              </div>
+            </div>
+<div class="col-12">
+              <label for="address" class="form-label">Product description</label>
+               <textarea name="text" id="text" class="container form-control" placeholder="Product description"></textarea>
+              <div class="invalid-feedback">
+                Please enter Product description.
+              </div>
+            </div>
+    <div class="col-sm-6">
+              <label for="lastName" class="form-label">Quantity of goods</label>
+                     <input type="number" name="count" id="count" class=" container form-control" placeholder="Quantity of goods"> <br>
+          <div class="invalid-feedback">
+                Valid Quantity of goods is required.
+              </div>
+            </div>
+    <br>
+    <center>
+        <div class="center col-4" >
+    <input type="submit" class="w-100 btn btn-lg btn-primary" value="Sent"></div>
+
+    </center>
+
+
+    </div>
+</form>
+</div>
+
+{% endblock %}
